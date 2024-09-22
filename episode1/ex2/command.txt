@@ -1,1 +1,1 @@
-ls -l /etc/ | grep -v '^\.' | sort -k5 -n
+ls -lS --ignore='.*' /etc/

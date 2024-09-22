@@ -1,1 +1,2 @@
-ls | head -n 5
+ls -p | grep -v / | head -n 5
+
