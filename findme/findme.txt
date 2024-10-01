@@ -1,0 +1,11 @@
+Les étapes suivantes doivent permettre de gérer le service et le timer :
+
+1. Copier le script `findme.sh` dans `/usr/local/bin/` et le rendre exécutable
+2. Créer le fichier de service `findme.service` dans `/etc/systemd/system/`
+3. Créer le fichier de timer `findme.timer` dans `/etc/systemd/system/`
+4. Lancer la commande `sudo systemctl daemon-reload`
+5. Démarrer le service et le timer `sudo systemctl enable etc/systemd/system/findme.timer` et `sudo systemctl start etc/systemd/system/findme.timer`
+6. Vérifier le statut du service et du timer : `sudo systemctl status etc/systemd/system/findme.service` et `sudo systemctl status etc/systemd/system/findme.timer`
+7. Consulter les logs : `journalctl -u etc/systemd/system/findme.service -f`.
+
+
